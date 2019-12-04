@@ -1,0 +1,17 @@
+{
+  "name": "easy_portfolie",
+  "version": "1.0.0",
+  "description": "Portfolio Template built with Nuxt.js.",
+  "author": "maestroDever",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
