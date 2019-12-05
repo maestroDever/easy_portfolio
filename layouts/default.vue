@@ -1,55 +1,68 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <!-- Main -->
+  <main>
+    <!-- Content -->
+    <nuxt/>
+
+    <!-- Footer -->
+    <footer :class="footer">
+      Handcrafted with <i class="footer__icon fa fa-heart"></i> in Miami. By <a class="footer__link" href="http://jonmalave.com" target="_blank">Jon Malave</a>
+    </footer>
+  </main>
 </template>
 
 <style>
+/* Block Elements */
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+}
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  color: #494b4b;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow-x: hidden;  
+  user-select: unset;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a {
+  font-weight: bold;
+  color: #494b4b;
   text-decoration: none;
-  padding: 10px 30px;
+}
+hr {
+  width: 100%;
+  border-width: 0.5px;
+  border-color: #e0e0e0;
+  margin: 16px 0;      
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  height: 56px;
+  width: 100%;
+  z-index: 3;
 }
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.footer__icon {
+  margin: 0 4px;
 }
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.footer__link {
+  margin: 0 4px;
 }
 </style>
