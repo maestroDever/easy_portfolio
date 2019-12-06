@@ -2,6 +2,9 @@
 
 > Portfolio Template built with Nuxt.js.
 
+## Demo
+[Demo](https://easy-portfolio.netlify.com)
+
 ## Build Setup
 
 ``` bash
